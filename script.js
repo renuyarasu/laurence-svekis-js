@@ -3,11 +3,20 @@ console.clear();
 
 // JavaScript Functions
 
-let val_01 = function (n) {
-    return n * 10;
+function loop(val) {
+    console.log(val);
+    if (val < 1) { return }
+    loop(val - 1);
 }
-function val_02(n) {
-    return n * 10;
-}
-console.log(val_01(10));
-console.log(val_02(10));
+loop(10)
+
+/* 9
+8
+7
+6
+5
+4
+3
+2
+1
+0 */
