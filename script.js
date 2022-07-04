@@ -1,8 +1,13 @@
 // Laurence Svekis - JavaScript Lessons
 console.clear();
 
-// Ternary Opertor
+// JavaScript Functions
 
-let id = true;
-let message = (id) ? 'Allowed!' : 'Not allowed!';
-console.log(message);
+let val_01 = function (n) {
+    return n * 10;
+}
+function val_02(n) {
+    return n * 10;
+}
+console.log(val_01(10));
+console.log(val_02(10));
