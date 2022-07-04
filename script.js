@@ -3,7 +3,8 @@ console.clear();
 
 // Loops
 
-for (let x = 0; x < 5; x++) {
+let x = 0;
+while (x < 5){
     console.log(x);
+    x++
 }
-
