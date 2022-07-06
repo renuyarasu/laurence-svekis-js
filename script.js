@@ -50,9 +50,6 @@ me(); // { name: "priya" } ✅
 
 ⭐️ Here's the rule: For a concise body, wrap object literal in parentheses. */
 
-// Implicit Return, Issue returning objects
-
-
-const implicit = () => ({ value: 1 })
-
-console.log(implicit()) // { value: 1 }
+// Multiple Parameters, Parentheses is Required
+const fun = (p1, p2) => { };
+console.log(fun()); undefined
