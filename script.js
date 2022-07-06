@@ -1,7 +1,7 @@
 // Laurence Svekis - JavaScript Lessons
 console.clear();
 
-// Loop: for/ Off loop()
+// Loop: While()
 
 
 const fruits = [
@@ -11,11 +11,13 @@ const fruits = [
     { id: 4, name: 'Strawberries', type: 'Berries' },
 ];
 
-for (let fruit of fruits) {
-    console.log(fruit.name);
+let i = 0;
+while (i < fruits.length) {
+    console.log(fruits[i].name);
+    i++
 }
-/* 
-Oranges
+
+/* Oranges
 Nectarines
 Watermelons
 Strawberries */
