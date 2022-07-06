@@ -1,7 +1,7 @@
 // Laurence Svekis - JavaScript Lessons
 console.clear();
 
-// Loop: Do while()
+// Loop: Map()
 
 
 const fruits = [
@@ -11,12 +11,7 @@ const fruits = [
     { id: 4, name: 'Strawberries', type: 'Berries' },
 ];
 
-let i = 0;
-do {
-    console.log(fruits[i].name);
-    i++
-} while (i < fruits.length)
-/* Oranges
-Nectarines
-Watermelons
-Strawberries */
+let fruit = fruits.map(fruits => fruits.type);
+console.log(fruit);
+
+// [ 'Citrus', 'Stone Fruit', 'Melons', 'Berries' ]
