@@ -1,7 +1,8 @@
 // Laurence Svekis - JavaScript Lessons
 console.clear();
 
-// Loop: for 
+// Loop: forEach( )
+
 
 const fruits = [
     { id: 1, name: 'Oranges', type: 'Citrus' },
@@ -10,11 +11,14 @@ const fruits = [
     { id: 4, name: 'Strawberries', type: 'Berries' },
 ];
 
-for (let i = 0; i < fruits.length; i++) {
-    console.table(fruits[i].name);
-}
+fruits.forEach(
+    function (fruit, index, fruits) {
+        console.log(`Name: ${fruit.name} Type: ${fruit.type}`);
+    }
+)
 
-/* Oranges
-Nectarines
-Watermelons
-Strawberries */
+/* 
+Name: Oranges Type: Citrus
+Name: Nectarines Type: Stone Fruit
+Name: Watermelons Type: Melons
+Name: Strawberries Type: Berries */
