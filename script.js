@@ -50,8 +50,9 @@ me(); // { name: "priya" } ✅
 
 ⭐️ Here's the rule: For a concise body, wrap object literal in parentheses. */
 
-// Implicit Return - Multi-line
+// Implicit Return, Issue returning objects
 
-const say = (name) => name
 
-console.log(say('Renu')); // Renu
+const implicit = () => { value: 1 }
+
+console.log(implicit()) // undefined
