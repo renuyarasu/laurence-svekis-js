@@ -1,7 +1,7 @@
 // Laurence Svekis - JavaScript Lessons
 console.clear();
 
-// Loop: While()
+// Loop: Do while()
 
 
 const fruits = [
@@ -12,11 +12,10 @@ const fruits = [
 ];
 
 let i = 0;
-while (i < fruits.length) {
+do {
     console.log(fruits[i].name);
     i++
-}
-
+} while (i < fruits.length)
 /* Oranges
 Nectarines
 Watermelons
