@@ -50,10 +50,10 @@ me(); // { name: "priya" } ✅
 
 ⭐️ Here's the rule: For a concise body, wrap object literal in parentheses. */
 
-// Normal Function
+// Explicit Return - Multi-line
 
-const say = function (name) {
+const say = (name) => {
     return name;
 }
 
-console.log(say('Renu'));
+console.log(say('Renu')); // Renu
