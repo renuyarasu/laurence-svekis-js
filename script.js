@@ -52,8 +52,6 @@ me(); // { name: "priya" } ✅
 
 // Implicit Return - Multi-line
 
-const say = (name) => (
-    name
-)
+const say = (name) => name
 
 console.log(say('Renu')); // Renu
