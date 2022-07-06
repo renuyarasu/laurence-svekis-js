@@ -53,6 +53,6 @@ me(); // { name: "priya" } ✅
 // Implicit Return, Issue returning objects
 
 
-const implicit = () => { value: 1 }
+const implicit = () => ({ value: 1 })
 
-console.log(implicit()) // undefined
+console.log(implicit()) // { value: 1 }
