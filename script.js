@@ -50,8 +50,10 @@ me(); // { name: "priya" } ✅
 
 ⭐️ Here's the rule: For a concise body, wrap object literal in parentheses. */
 
-// Explicit Return - Single-line
+// Implicit Return - Multi-line
 
-const say = (name) => name;
+const say = (name) => (
+    name
+)
 
 console.log(say('Renu')); // Renu
