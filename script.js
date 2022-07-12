@@ -1,17 +1,8 @@
 // Laurence Svekis - JavaScript Lessons
 console.clear();
 
-// Loop: Map()
+// Arrays 
 
-
-const fruits = [
-    { id: 1, name: 'Oranges', type: 'Citrus' },
-    { id: 2, name: 'Nectarines', type: 'Stone Fruit' },
-    { id: 3, name: 'Watermelons', type: 'Melons' },
-    { id: 4, name: 'Strawberries', type: 'Berries' },
-];
-
-let fruit = fruits.map(fruits => fruits.type);
-console.log(fruit);
-
-// [ 'Citrus', 'Stone Fruit', 'Melons', 'Berries' ]
+let myArray = [9, 1, 2, 3, 4, 5];
+let result = myArray.sort()
+console.log(myArray);
